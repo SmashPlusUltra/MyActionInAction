@@ -1,4 +1,16 @@
 name: "SmashPlusUltra's Action in Action"
 description: 'Greets someone and returs always 42.'
 inputs: 
-  
+  who-to-greet: # id of input
+    description: 'Who to greet'
+    required: true
+    default: 'World'
+
+outputs:
+  answer: # id of output
+    description: 'The answer to everything (always 42)'
+  runs:
+     using: 'docker'
+     image: 'Dockerfile'
+     args:
+      - ${{ inputs.who-to-greet}}
