@@ -1,0 +1,4 @@
+name: "SmashPlusUltra's Action in Action"
+description: 'Greets someone and returs always 42.'
+inputs: 
+  
